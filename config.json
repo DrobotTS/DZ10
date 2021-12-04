@@ -1,4 +1,4 @@
-{"price": 27,
-"valet": 10000,
+{"price": 26,
+"valet": 10000.0,
 "delta": 0.5,
-"usd_valet": 0}
+"usd_valet": 0.0}
