@@ -102,7 +102,10 @@ def buy_all_param():
         print("USD:", usd_valet, "ГРН:", valet)
 # вывести содержание кошелька
 def available_param():
-    print("USD:", read_file_sys()['usd_valet'], "ГРН:", read_file_sys()['valet'])
+    if os.stat("sys.json").st_size == 0:
+        print("Введите RESTART")
+    else:
+        print("USD:", read_file_sys()['usd_valet'], "ГРН:", read_file_sys()['valet'])
 # Продать все доллары
 def sell_all_param():
     global valet, usd_valet, price
